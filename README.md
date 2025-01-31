@@ -15,7 +15,6 @@ git clone https://github.com/fahchouchsm/TS-React-Electron
 
 ```sh
 npm install
-npm run dev
 npm run dev:electron
 ```
 

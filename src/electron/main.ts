@@ -1,5 +1,4 @@
 import { app, BrowserWindow } from 'electron';
-import path from 'path';
 
 function createWindow() {
   const mainWindow = new BrowserWindow({
@@ -7,11 +6,26 @@ function createWindow() {
     height: 600,
     webPreferences: {
       nodeIntegration: true,
-      contextIsolation: false,
+      contextIsolation: false, // Allow Node.js integration
     },
   });
 
-  mainWindow.loadFile(path.join(app.getAppPath(), '/distReact/index.html'));
+  mainWindow.loadURL('http://localhost:5173'); // Vite default dev server URL
+  mainWindow.webContents.openDevTools(); // Open DevTools in development
+
 }
 
 app.on('ready', createWindow);
+
+// Quit when all windows are closed
+app.on('window-all-closed', () => {
+  if (process.platform !== 'darwin') {
+    app.quit();
+  }
+});
+
+app.on('activate', () => {
+  if (BrowserWindow.getAllWindows().length === 0) {
+    createWindow();
+  }
+});

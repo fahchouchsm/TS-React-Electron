@@ -2,7 +2,8 @@
 <p>
 </p>
 
-> A lightweight, type-safe boilerplate for building cross-platform desktop apps with React, Electron, and TypeScript.
+> A lightweight, type-safe boilerplate for building cross-platform desktop apps
+> with React, Electron, and TypeScript.
 
 ## Install
 
@@ -14,17 +15,22 @@ git clone https://github.com/fahchouchsm/TS-React-Electron
 
 ```sh
 npm install
+npm run dev
+npm run dev:electron
 ```
 
 ## Author
 
 👤 **Fahchouch Mohammed**
 
-* Github: [@fahchouchsm](https://github.com/fahchouchsm)
+- Github: [@fahchouchsm](https://github.com/fahchouchsm)
 
 ## Show your support
 
 Give a ⭐️ if this project helped you!
 
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_# TS-React-Electron
+---
+
+_This README was generated with ❤️ by
+[readme-md-generator](https://github.com/kefranabg/readme-md-generator)_#
+TS-React-Electron
